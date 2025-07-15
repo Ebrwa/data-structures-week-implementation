@@ -1,81 +1,139 @@
-﻿# 📘 Data Structures - Week 1 Implementation
+﻿# 📘 Data Structures - Full Implementation (Week 1)
 
-This repository contains the implementations of basic data structures in C++ as part of Week 1 training tasks.
+This project contains the implementation of fundamental data structures in C++ as part of Week 1 practice.
+
+It includes all required structures for both Day 1 and Day 2 tasks, each implemented in its own `.cpp` file and tested using a `main()` function.
 
 ---
 
-## 🛠 Implemented Structures
+## 🔹 Day 1 - Implemented Structures
 
 ### 1. Dynamic Array
+A resizable array that automatically expands when full.
 
-A resizable array that expands or shrinks during runtime as elements are added or removed.
-
-**Time Complexity:**
-- Access: O(1)
-- Insert (end): Amortized O(1), Worst: O(n)
-- Delete: O(n)
-
-**Space Complexity:** O(n)
+- **Time Complexity:**
+  - Access: O(1)
+  - Insert (end): Amortized O(1), Worst O(n)
+  - Delete: O(n)
+- **Space Complexity:** O(n)
+- **Use Case:** Used in array-based containers like `std::vector`.
 
 ---
 
 ### 2. Singly Linked List
+A list of nodes where each node points only to the next node.
 
-A sequence of nodes where each node holds data and points to the next.
-
-**Time Complexity:**
-- Insert at end: O(n)
-- Delete by value: O(n)
-- Search: O(n)
-
-**Space Complexity:** O(n)
+- **Time Complexity:**
+  - Insert at head: O(1)
+  - Insert at tail: O(n)
+  - Search/Delete: O(n)
+- **Space Complexity:** O(n)
+- **Use Case:** Efficient for operations at the beginning of the list.
 
 ---
 
 ### 3. Stack using Array
+A Last-In-First-Out (LIFO) structure implemented with a dynamic array.
 
-A Last-In-First-Out (LIFO) structure implemented using a dynamic array.
-
-**Time Complexity:**
-- Push: O(1)
-- Pop: O(1)
-- Peek: O(1)
-
-**Space Complexity:** O(n)
+- **Time Complexity:**
+  - Push: O(1)
+  - Pop: O(1)
+  - Peek: O(1)
+- **Space Complexity:** O(n)
+- **Use Case:** Undo features, function call stacks, expression parsing.
 
 ---
 
 ### 4. Stack using Linked List
+Same LIFO behavior, implemented using nodes for flexible memory usage.
 
-A LIFO stack structure where each element is a node linked to the one below it.
-
-**Time Complexity:**
-- Push: O(1)
-- Pop: O(1)
-- Peek: O(1)
-
-**Space Complexity:** O(n)
+- **Time Complexity:** Same as array-based stack (O(1) for all operations)
+- **Space Complexity:** O(n)
+- **Use Case:** Ideal when size isn't known in advance.
 
 ---
 
-## 🧪 How to Run
+## 🔹 Day 2 - Implemented Structures
 
-1. Open the project in **Visual Studio 2022**.
-2. Make sure you have C++ installed.
-3. Run the `main()` function inside `DSA_Project.cpp` to test the structures.
-4. Output will show results of each operation (insert, delete, peek, etc.)
+### 5. Queue using Array
+A circular array-based implementation of a First-In-First-Out (FIFO) queue.
 
----
-
-## 🧩 Usage Examples
-
-- **DynamicArray** can grow/shrink as needed and be used for building higher-level structures.
-- **SinglyLinkedList** is useful when frequent insertions/removals are needed.
-- **Stacks** are used in undo features, recursion handling, syntax validation, etc.
+- **Time Complexity:**
+  - Enqueue: O(1)
+  - Dequeue: O(1)
+  - Peek: O(1)
+- **Space Complexity:** O(n)
+- **Use Case:** Used in systems like print queues, task schedulers.
 
 ---
 
-## 🛠 Tools Used
+### 6. Queue using Linked List
+A FIFO queue implemented using front/rear pointers in a linked list.
 
-- Language: C++
-- IDE: Visual Studio 2022
+- **Time Complexity:** All operations in O(1)
+- **Space Complexity:** O(n)
+- **Use Case:** Dynamic queues with flexible size limits.
+
+---
+
+### 7. Doubly Linked List
+Each node has two pointers: one to the next and one to the previous.
+
+- **Time Complexity:**
+  - Insert/Delete at head or tail: O(1)
+  - Search/Delete by value: O(n)
+- **Space Complexity:** O(n)
+- **Use Case:** Ideal for two-way navigation like browser history or music playlists.
+
+---
+
+### 8. Circular Linked List
+A linked list where the last node points back to the first, forming a loop.
+
+- **Time Complexity:**
+  - Insert at front/end: O(1)
+  - Search: O(n)
+- **Space Complexity:** O(n)
+- **Use Case:** Useful in circular processes (e.g., round-robin schedulers).
+
+---
+
+## 🧪 How to Run the Tests
+
+1. **Open the project in Visual Studio 2022**
+   - Make sure C++ is installed and configured properly.
+
+2. **Pick any `.cpp` file from the folders `Day1` or `Day2`**
+   - Example: `stack_array.cpp`, `QueueLinkedList.cpp`, etc.
+
+3. **Run the file**
+   - Open the file.
+   - Right-click anywhere inside `main()` and click **Run Without Debugging (Ctrl + F5)**.
+
+4. **Observe the Output**
+   - Each file has a `main()` that demonstrates basic operations like insert, remove, peek, etc.
+
+---
+
+## 🧩 Usage Summary
+
+| Structure               | Common Applications                               |
+|------------------------|----------------------------------------------------|
+| Dynamic Array          | Flexible containers, low-level array structures   |
+| Singly Linked List     | Simple, growing data chains                        |
+| Stack (Array/List)     | Undo, backtracking, expression parsing             |
+| Queue (Array/List)     | Job scheduling, buffers, breadth-first traversal   |
+| Doubly Linked List     | Back-and-forth navigation                          |
+| Circular Linked List   | Rotating queues, repeatable loops (e.g., games)   |
+
+---
+
+## 🛠 Project Info
+
+- **Language:** C++
+- **IDE:** Visual Studio 2022
+- **Structure:**  
+  - `Day1/` – Dynamic Array, Singly Linked List, Stack (Array + List)  
+  - `Day2/` – Queue (Array + List), Doubly Linked List, Circular Linked List
+
+---
