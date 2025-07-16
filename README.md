@@ -2,7 +2,7 @@
 
 This project contains the implementation of fundamental data structures in C++ as part of Week 1 practice.
 
-It includes all required structures for both Day 1 and Day 2 tasks, each implemented in its own `.cpp` file and tested using a `main()` function.
+It includes all required structures for Day 1, Day 2, and Day 3 tasks, each implemented in its own `.cpp` file and tested using a `main()` function.
 
 ---
 
@@ -18,8 +18,6 @@ A resizable array that automatically expands when full.
 - **Space Complexity:** O(n)
 - **Use Case:** Used in array-based containers like `std::vector`.
 
----
-
 ### 2. Singly Linked List
 A list of nodes where each node points only to the next node.
 
@@ -30,8 +28,6 @@ A list of nodes where each node points only to the next node.
 - **Space Complexity:** O(n)
 - **Use Case:** Efficient for operations at the beginning of the list.
 
----
-
 ### 3. Stack using Array
 A Last-In-First-Out (LIFO) structure implemented with a dynamic array.
 
@@ -41,8 +37,6 @@ A Last-In-First-Out (LIFO) structure implemented with a dynamic array.
   - Peek: O(1)
 - **Space Complexity:** O(n)
 - **Use Case:** Undo features, function call stacks, expression parsing.
-
----
 
 ### 4. Stack using Linked List
 Same LIFO behavior, implemented using nodes for flexible memory usage.
@@ -65,16 +59,12 @@ A circular array-based implementation of a First-In-First-Out (FIFO) queue.
 - **Space Complexity:** O(n)
 - **Use Case:** Used in systems like print queues, task schedulers.
 
----
-
 ### 6. Queue using Linked List
 A FIFO queue implemented using front/rear pointers in a linked list.
 
 - **Time Complexity:** All operations in O(1)
 - **Space Complexity:** O(n)
 - **Use Case:** Dynamic queues with flexible size limits.
-
----
 
 ### 7. Doubly Linked List
 Each node has two pointers: one to the next and one to the previous.
@@ -84,8 +74,6 @@ Each node has two pointers: one to the next and one to the previous.
   - Search/Delete by value: O(n)
 - **Space Complexity:** O(n)
 - **Use Case:** Ideal for two-way navigation like browser history or music playlists.
-
----
 
 ### 8. Circular Linked List
 A linked list where the last node points back to the first, forming a loop.
@@ -98,13 +86,42 @@ A linked list where the last node points back to the first, forming a loop.
 
 ---
 
+## 🔹 Day 3 - Implemented Structures
+
+### 9. Binary Tree
+A non-search tree where each node can have up to two children. Nodes are added manually in this implementation.
+
+- **Traversal Algorithms Implemented:**
+  - Inorder (Left, Root, Right)
+  - Preorder (Root, Left, Right)
+  - Postorder (Left, Right, Root)
+- **Additional Features:**
+  - Height calculation
+  - Memory-safe deletion of the entire tree
+- **Use Case:** General tree structures where ordering doesn't matter
+
+### 10. Binary Search Tree (BST)
+A binary tree where the left subtree of a node contains values less than the node, and the right contains greater values.
+
+- **Traversal Algorithms Implemented:**
+  - Inorder (Left, Root, Right)
+  - Preorder (Root, Left, Right)
+  - Postorder (Left, Right, Root)
+- **Additional Features:**
+  - Height calculation
+  - Size tracking
+  - Safe dynamic memory management
+- **Use Case:** Searching, sorting, dynamic set management
+
+---
+
 ## 🧪 How to Run the Tests
 
 1. **Open the project in Visual Studio 2022**
    - Make sure C++ is installed and configured properly.
 
-2. **Pick any `.cpp` file from the folders `Day1` or `Day2`**
-   - Example: `stack_array.cpp`, `QueueLinkedList.cpp`, etc.
+2. **Pick any `.cpp` file from the folders `Day1`, `Day2`, or `Day3`**
+   - Example: `BinaryTree.cpp`, `stack_array.cpp`, `QueueLinkedList.cpp`, etc.
 
 3. **Run the file**
    - Open the file.
@@ -125,6 +142,8 @@ A linked list where the last node points back to the first, forming a loop.
 | Queue (Array/List)     | Job scheduling, buffers, breadth-first traversal   |
 | Doubly Linked List     | Back-and-forth navigation                          |
 | Circular Linked List   | Rotating queues, repeatable loops (e.g., games)   |
+| Binary Tree            | Parsing trees, expression trees                    |
+| Binary Search Tree     | Fast search and dynamic set operations             |
 
 ---
 
@@ -134,6 +153,7 @@ A linked list where the last node points back to the first, forming a loop.
 - **IDE:** Visual Studio 2022
 - **Structure:**  
   - `Day1/` – Dynamic Array, Singly Linked List, Stack (Array + List)  
-  - `Day2/` – Queue (Array + List), Doubly Linked List, Circular Linked List
+  - `Day2/` – Queue (Array + List), Doubly Linked List, Circular Linked List  
+  - `Day3/` – Binary Tree, Binary Search Tree
 
 ---
