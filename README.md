@@ -113,6 +113,36 @@ A binary tree where the left subtree of a node contains values less than the nod
   - Safe dynamic memory management
 - **Use Case:** Searching, sorting, dynamic set management
 
+
+## 🔹 Day 4 - Implemented Structures
+
+### 11. Min Heap
+A complete binary tree where each parent is smaller than its children.
+
+- **Features:**
+  - Insert values and maintain heap order
+  - Remove the minimum element (root)
+  - Get the minimum value at the top
+- **Implementation:** Using STL `priority_queue` with `greater<int>`
+- **Use Case:** Priority queues, scheduling, shortest path algorithms
+
+### 12. Hash Table (Chaining)
+A key-value store using a hash function with separate chaining (linked lists).
+
+- **Features:**
+  - Insert, delete, and search by string key
+  - Handles collisions using linked lists at each index
+- **Use Case:** Symbol tables, dictionaries, indexing
+
+### 13. Adjacency List Graph
+Graph representation using an adjacency list to store neighbors.
+
+- **Features:**
+  - Add and remove undirected edges
+  - Print graph connections
+- **Use Case:** Network topology, social graphs, pathfinding
+
+
 ---
 
 ## 🧪 How to Run the Tests
@@ -120,7 +150,7 @@ A binary tree where the left subtree of a node contains values less than the nod
 1. **Open the project in Visual Studio 2022**
    - Make sure C++ is installed and configured properly.
 
-2. **Pick any `.cpp` file from the folders `Day1`, `Day2`, or `Day3`**
+2. **Pick any `.cpp` file from the folders `Day1`, `Day2`, `Day3`, or `Day4`**
    - Example: `BinaryTree.cpp`, `stack_array.cpp`, `QueueLinkedList.cpp`, etc.
 
 3. **Run the file**
@@ -144,6 +174,9 @@ A binary tree where the left subtree of a node contains values less than the nod
 | Circular Linked List   | Rotating queues, repeatable loops (e.g., games)   |
 | Binary Tree            | Parsing trees, expression trees                    |
 | Binary Search Tree     | Fast search and dynamic set operations             |
+| Min Heap               | Priority queues, task scheduling, heapsort        |
+| Hash Table (Chaining)  | Key-value maps, collision-handling lookup         |
+| Adjacency List Graph   | Graph algorithms, network routing                 |
 
 ---
 
@@ -155,5 +188,6 @@ A binary tree where the left subtree of a node contains values less than the nod
   - `Day1/` – Dynamic Array, Singly Linked List, Stack (Array + List)  
   - `Day2/` – Queue (Array + List), Doubly Linked List, Circular Linked List  
   - `Day3/` – Binary Tree, Binary Search Tree
+  - `Day4/` – Min Heap, Hash Table, Graph (Adjacency List)`
 
 ---
