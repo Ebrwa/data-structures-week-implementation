@@ -1,14 +1,14 @@
-﻿# 📘 Data Structures - Full Implementation (Week 1)
+# 📘 Data Structures - Full Implementation (Week 1)
 
 This project contains the implementation of fundamental data structures in C++ as part of Week 1 practice.
 
-It includes all required structures for Day 1, Day 2, and Day 3 tasks, each implemented in its own `.cpp` file and tested using a `main()` function.
+It includes all required structures for Day 1, Day 2, Day 3, Day 4, and Day 5 tasks, each implemented in its own `.cpp` file and tested using a `main()` function.
 
 ---
 
 ## 🔹 Day 1 - Implemented Structures
 
-### 1. Dynamic Array
+### 1. Dynamic Array  
 A resizable array that automatically expands when full.
 
 - **Time Complexity:**
@@ -16,167 +16,174 @@ A resizable array that automatically expands when full.
   - Insert (end): Amortized O(1), Worst O(n)
   - Delete: O(n)
 - **Space Complexity:** O(n)
-- **Use Case:** Used in array-based containers like `std::vector`.
+- **Use Case:** Used in dynamic containers like `std::vector`.
 
-### 2. Singly Linked List
+### 2. Singly Linked List  
 A list of nodes where each node points only to the next node.
 
-- **Time Complexity:**
-  - Insert at head: O(1)
-  - Insert at tail: O(n)
-  - Search/Delete: O(n)
+- **Time Complexity:** O(1) insert at head, O(n) for search/delete.
 - **Space Complexity:** O(n)
-- **Use Case:** Efficient for operations at the beginning of the list.
+- **Use Case:** Useful for linear data where frequent insertions/removals occur at the front.
 
-### 3. Stack using Array
-A Last-In-First-Out (LIFO) structure implemented with a dynamic array.
+### 3. Stack using Array  
+Implements LIFO using a dynamic array.
 
-- **Time Complexity:**
-  - Push: O(1)
-  - Pop: O(1)
-  - Peek: O(1)
+- **Time Complexity:** O(1) for push/pop/peek.
 - **Space Complexity:** O(n)
-- **Use Case:** Undo features, function call stacks, expression parsing.
+- **Use Case:** Expression evaluation, backtracking.
 
-### 4. Stack using Linked List
-Same LIFO behavior, implemented using nodes for flexible memory usage.
+### 4. Stack using Linked List  
+Stack operations using linked nodes instead of array.
 
-- **Time Complexity:** Same as array-based stack (O(1) for all operations)
+- **Time Complexity:** O(1) for push/pop/peek.
 - **Space Complexity:** O(n)
-- **Use Case:** Ideal when size isn't known in advance.
+- **Use Case:** Better when size is unknown or fluctuating.
 
 ---
 
 ## 🔹 Day 2 - Implemented Structures
 
-### 5. Queue using Array
-A circular array-based implementation of a First-In-First-Out (FIFO) queue.
+### 5. Queue using Array  
+FIFO implementation using a circular array.
 
-- **Time Complexity:**
-  - Enqueue: O(1)
-  - Dequeue: O(1)
-  - Peek: O(1)
+- **Time Complexity:** O(1) for enqueue/dequeue/peek.
 - **Space Complexity:** O(n)
-- **Use Case:** Used in systems like print queues, task schedulers.
+- **Use Case:** Print queues, scheduling tasks.
 
-### 6. Queue using Linked List
-A FIFO queue implemented using front/rear pointers in a linked list.
+### 6. Queue using Linked List  
+Queue using dynamic memory allocation with head/tail.
 
-- **Time Complexity:** All operations in O(1)
+- **Time Complexity:** O(1) for all operations.
 - **Space Complexity:** O(n)
-- **Use Case:** Dynamic queues with flexible size limits.
+- **Use Case:** When queue size changes dynamically.
 
-### 7. Doubly Linked List
-Each node has two pointers: one to the next and one to the previous.
+### 7. Doubly Linked List  
+Each node points to both previous and next node.
 
-- **Time Complexity:**
-  - Insert/Delete at head or tail: O(1)
-  - Search/Delete by value: O(n)
+- **Time Complexity:** O(1) insert/delete at head/tail, O(n) search.
 - **Space Complexity:** O(n)
-- **Use Case:** Ideal for two-way navigation like browser history or music playlists.
+- **Use Case:** Navigation history (browser/music players).
 
-### 8. Circular Linked List
-A linked list where the last node points back to the first, forming a loop.
+### 8. Circular Linked List  
+The last node connects back to the first.
 
-- **Time Complexity:**
-  - Insert at front/end: O(1)
-  - Search: O(n)
+- **Time Complexity:** O(1) insert at front/tail.
 - **Space Complexity:** O(n)
-- **Use Case:** Useful in circular processes (e.g., round-robin schedulers).
+- **Use Case:** Round-robin scheduling, loops.
 
 ---
 
 ## 🔹 Day 3 - Implemented Structures
 
-### 9. Binary Tree
-A non-search tree where each node can have up to two children. Nodes are added manually in this implementation.
+### 9. Binary Tree  
+Basic tree with left and right child nodes.
 
-- **Traversal Algorithms Implemented:**
-  - Inorder (Left, Root, Right)
-  - Preorder (Root, Left, Right)
-  - Postorder (Left, Right, Root)
-- **Additional Features:**
-  - Height calculation
-  - Memory-safe deletion of the entire tree
-- **Use Case:** General tree structures where ordering doesn't matter
+- **Supports:** Inorder, Preorder, Postorder traversal  
+- **Includes:** Height calculation
+- **Time Complexity:**
+  - Insert/Search: O(n)
+  - Traversals: O(n)
+  - Height: O(n)
+- **Space Complexity:** O(n)
+- **Use Case:** Hierarchical data like file systems or expressions.
 
-### 10. Binary Search Tree (BST)
-A binary tree where the left subtree of a node contains values less than the node, and the right contains greater values.
+### 10. Binary Search Tree  
+Sorted binary tree for fast search and insertion.
 
-- **Traversal Algorithms Implemented:**
-  - Inorder (Left, Root, Right)
-  - Preorder (Root, Left, Right)
-  - Postorder (Left, Right, Root)
-- **Additional Features:**
-  - Height calculation
-  - Size tracking
-  - Safe dynamic memory management
-- **Use Case:** Searching, sorting, dynamic set management
+- **Time Complexity:**
+  - Average Case: O(log n)
+  - Worst Case: O(n)
+- **Space Complexity:** O(n)
+- **Use Case:** Dynamic sets, database indexing.
 
+---
 
 ## 🔹 Day 4 - Implemented Structures
 
-### 11. Min Heap
-A complete binary tree where each parent is smaller than its children.
+### 11. Min Heap  
+Priority queue implementation using binary heap.
 
-- **Features:**
-  - Insert values and maintain heap order
-  - Remove the minimum element (root)
-  - Get the minimum value at the top
-- **Implementation:** Using STL `priority_queue` with `greater<int>`
-- **Use Case:** Priority queues, scheduling, shortest path algorithms
+- **Time Complexity:**
+  - Insert: O(log n)
+  - Get/Remove Min: O(log n)
+- **Space Complexity:** O(n)
+- **Use Case:** Task scheduling, shortest path algorithms.
 
-### 12. Hash Table (Chaining)
-A key-value store using a hash function with separate chaining (linked lists).
+### 12. Hash Table  
+Implements separate chaining for collision handling.
 
-- **Features:**
-  - Insert, delete, and search by string key
-  - Handles collisions using linked lists at each index
-- **Use Case:** Symbol tables, dictionaries, indexing
+- **Time Complexity:**
+  - Average Case: O(1)
+  - Worst Case: O(n)
+- **Space Complexity:** O(n)
+- **Use Case:** Fast key-based access.
 
-### 13. Adjacency List Graph
-Graph representation using an adjacency list to store neighbors.
+### 13. Graph (Adjacency List)  
+Undirected graph using adjacency list.
 
-- **Features:**
-  - Add and remove undirected edges
-  - Print graph connections
-- **Use Case:** Network topology, social graphs, pathfinding
+- **Time Complexity:**
+  - Add Edge: O(1)
+  - Traversal: O(V + E)
+- **Space Complexity:** O(V + E)
+- **Use Case:** Networks, dependency resolution.
 
+---
+
+## 🔹 Day 5 - Implemented Structures
+
+### 14. Graph Traversal (BFS & DFS)  
+Two basic traversal methods.
+
+- **BFS:** Queue-based
+- **DFS:** Stack-based (recursive)
+- **Time Complexity:** O(V + E)
+- **Space Complexity:** O(V)
+- **Use Case:** Search, AI, connectivity check.
+
+### 15. Trie (Prefix Tree)  
+Specialized tree for prefix operations.
+
+- **Time Complexity:**
+  - Insert/Search: O(L) where L is length of string
+- **Space Complexity:** O(n * L)
+- **Use Case:** Auto-completion, spell-checking.
+
+### 16. Disjoint Set (Union Find)  
+Tracks and merges disjoint sets.
+
+- **Time Complexity:** O(α(n)) using path compression and union by rank
+- **Space Complexity:** O(n)
+- **Use Case:** Kruskal’s MST, network grouping.
 
 ---
 
 ## 🧪 How to Run the Tests
 
-1. **Open the project in Visual Studio 2022**
-   - Make sure C++ is installed and configured properly.
-
-2. **Pick any `.cpp` file from the folders `Day1`, `Day2`, `Day3`, or `Day4`**
-   - Example: `BinaryTree.cpp`, `stack_array.cpp`, `QueueLinkedList.cpp`, etc.
-
-3. **Run the file**
-   - Open the file.
-   - Right-click anywhere inside `main()` and click **Run Without Debugging (Ctrl + F5)**.
-
-4. **Observe the Output**
-   - Each file has a `main()` that demonstrates basic operations like insert, remove, peek, etc.
+1. Open the project in Visual Studio 2022 (or compatible C++ IDE).
+2. Go to any `.cpp` file inside `Day1/` to `Day5/`.
+3. Right-click inside the `main()` and select **Run Without Debugging**.
+4. Output will show the functionality of the selected structure.
 
 ---
 
 ## 🧩 Usage Summary
 
-| Structure               | Common Applications                               |
-|------------------------|----------------------------------------------------|
-| Dynamic Array          | Flexible containers, low-level array structures   |
-| Singly Linked List     | Simple, growing data chains                        |
-| Stack (Array/List)     | Undo, backtracking, expression parsing             |
-| Queue (Array/List)     | Job scheduling, buffers, breadth-first traversal   |
-| Doubly Linked List     | Back-and-forth navigation                          |
-| Circular Linked List   | Rotating queues, repeatable loops (e.g., games)   |
-| Binary Tree            | Parsing trees, expression trees                    |
-| Binary Search Tree     | Fast search and dynamic set operations             |
-| Min Heap               | Priority queues, task scheduling, heapsort        |
-| Hash Table (Chaining)  | Key-value maps, collision-handling lookup         |
-| Adjacency List Graph   | Graph algorithms, network routing                 |
+| Structure               | Use Case                              |
+|------------------------|----------------------------------------|
+| Dynamic Array          | Flexible storage                       |
+| Singly Linked List     | Sequential access                      |
+| Stack (Array/List)     | Undo, backtracking                     |
+| Queue (Array/List)     | Scheduling, buffering                  |
+| Doubly Linked List     | Bidirectional navigation               |
+| Circular Linked List   | Circular processing                    |
+| Binary Tree            | Hierarchical data                      |
+| Binary Search Tree     | Fast lookup                            |
+| Min Heap               | Priority management                    |
+| Hash Table             | Key-value storage                      |
+| Graph (Adjacency List) | Network models                         |
+| Graph Traversal        | Explore connected paths                |
+| Trie                   | Prefix-based string search             |
+| Union-Find             | Group tracking                         |
 
 ---
 
@@ -184,10 +191,9 @@ Graph representation using an adjacency list to store neighbors.
 
 - **Language:** C++
 - **IDE:** Visual Studio 2022
-- **Structure:**  
-  - `Day1/` – Dynamic Array, Singly Linked List, Stack (Array + List)  
-  - `Day2/` – Queue (Array + List), Doubly Linked List, Circular Linked List  
-  - `Day3/` – Binary Tree, Binary Search Tree
-  - `Day4/` – Min Heap, Hash Table, Graph (Adjacency List)`
-
----
+- **Structure:**
+  - `Day1/` – Basic Lists and Stack
+  - `Day2/` – Queues and Advanced Lists
+  - `Day3/` – Trees
+  - `Day4/` – Hashing, Heap, Graphs
+  - `Day5/` – Graph Traversal, Trie, Union-Find
