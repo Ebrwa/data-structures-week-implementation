@@ -38,6 +38,9 @@ Implements LIFO using a dynamic array.
 - **Space Complexity:** O(n)
 - **Use Case:** Expression evaluation, backtracking.
 
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/75069acd-e5ea-4958-a90d-ad6ecafde332" />
+
+
 ### 4. Stack using Linked List  
 Stack operations using linked nodes instead of array.
 
@@ -45,8 +48,7 @@ Stack operations using linked nodes instead of array.
 - **Space Complexity:** O(n)
 - **Use Case:** Better when size is unknown or fluctuating.
 
-<img width="1049" height="610" alt="image" src="https://github.com/user-attachments/assets/0c71556f-b287-401c-95de-096c84c9b876" />
-
+<img width="770" height="407" alt="image" src="https://github.com/user-attachments/assets/fb3d966d-bedc-4f6a-99ca-66d67bbec839" />
 
 
 ---
@@ -77,6 +79,8 @@ Each node points to both previous and next node.
 - **Space Complexity:** O(n)
 - **Use Case:** Navigation history (browser/music players).
 
+<img width="980" height="337" alt="image" src="https://github.com/user-attachments/assets/33241125-c12c-4d2c-8335-f2f5d00841db" />
+
 ### 8. Circular Linked List  
 The last node connects back to the first.
 
@@ -84,7 +88,8 @@ The last node connects back to the first.
 - **Space Complexity:** O(n)
 - **Use Case:** Round-robin scheduling, loops.
 
-<img width="980" height="337" alt="image" src="https://github.com/user-attachments/assets/33241125-c12c-4d2c-8335-f2f5d00841db" />
+<img width="1001" height="229" alt="image" src="https://github.com/user-attachments/assets/43618fef-3438-494c-8c49-ee46bc56967e" />
+
 
 
 ---
