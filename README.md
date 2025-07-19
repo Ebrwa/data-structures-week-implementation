@@ -1,4 +1,4 @@
-<img width="926" height="515" alt="dynamicarray" src="https://github.com/user-attachments/assets/708dcf01-566b-4b38-b474-bc5376761f94" /># 📘 Data Structures - Full Implementation (Week 1)
+📘 Data Structures - Full Implementation (Week 1)
 
 This project contains the implementation of fundamental data structures in C++ as part of Week 1 practice.
 
