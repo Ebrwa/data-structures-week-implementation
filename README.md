@@ -45,7 +45,8 @@ Stack operations using linked nodes instead of array.
 - **Space Complexity:** O(n)
 - **Use Case:** Better when size is unknown or fluctuating.
 
-<img width="500" height="501" alt="image" src="https://github.com/user-attachments/assets/14172b80-f483-4f74-b339-69a78ae87dfd" />
+<img width="1049" height="610" alt="image" src="https://github.com/user-attachments/assets/0c71556f-b287-401c-95de-096c84c9b876" />
+
 
 
 ---
