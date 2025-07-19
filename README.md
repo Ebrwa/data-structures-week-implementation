@@ -88,7 +88,8 @@ The last node connects back to the first.
 - **Space Complexity:** O(n)
 - **Use Case:** Round-robin scheduling, loops.
 
-<img width="1001" height="229" alt="image" src="https://github.com/user-attachments/assets/43618fef-3438-494c-8c49-ee46bc56967e" />
+<img width="1000" height="204" alt="image" src="https://github.com/user-attachments/assets/842a4759-6f8b-4ede-aaff-4297da8d336e" />
+
 
 
 
