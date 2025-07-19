@@ -28,6 +28,9 @@ A list of nodes where each node points only to the next node.
 - **Space Complexity:** O(n)
 - **Use Case:** Useful for linear data where frequent insertions/removals occur at the front.
 
+<img width="801" height="262" alt="image" src="https://github.com/user-attachments/assets/e59199c9-89ff-47c9-9303-d5461664bd74" />
+
+
 ### 3. Stack using Array  
 Implements LIFO using a dynamic array.
 
@@ -41,6 +44,9 @@ Stack operations using linked nodes instead of array.
 - **Time Complexity:** O(1) for push/pop/peek.
 - **Space Complexity:** O(n)
 - **Use Case:** Better when size is unknown or fluctuating.
+
+<img width="500" height="501" alt="image" src="https://github.com/user-attachments/assets/14172b80-f483-4f74-b339-69a78ae87dfd" />
+
 
 ---
 
@@ -60,6 +66,9 @@ Queue using dynamic memory allocation with head/tail.
 - **Space Complexity:** O(n)
 - **Use Case:** When queue size changes dynamically.
 
+<img width="586" height="287" alt="image" src="https://github.com/user-attachments/assets/fb694565-e6f4-4068-b81a-1cc6000d03af" />
+
+
 ### 7. Doubly Linked List  
 Each node points to both previous and next node.
 
@@ -73,6 +82,9 @@ The last node connects back to the first.
 - **Time Complexity:** O(1) insert at front/tail.
 - **Space Complexity:** O(n)
 - **Use Case:** Round-robin scheduling, loops.
+
+<img width="980" height="337" alt="image" src="https://github.com/user-attachments/assets/33241125-c12c-4d2c-8335-f2f5d00841db" />
+
 
 ---
 
@@ -90,6 +102,9 @@ Basic tree with left and right child nodes.
 - **Space Complexity:** O(n)
 - **Use Case:** Hierarchical data like file systems or expressions.
 
+<img width="824" height="542" alt="image" src="https://github.com/user-attachments/assets/7b6a021c-ddbf-4719-8c50-c06f983e4bc5" />
+
+
 ### 10. Binary Search Tree  
 Sorted binary tree for fast search and insertion.
 
@@ -98,6 +113,9 @@ Sorted binary tree for fast search and insertion.
   - Worst Case: O(n)
 - **Space Complexity:** O(n)
 - **Use Case:** Dynamic sets, database indexing.
+
+<img width="625" height="325" alt="image" src="https://github.com/user-attachments/assets/6e0940d8-241c-4512-a84a-1cb54df1f038" />
+
 
 ---
 
@@ -112,6 +130,9 @@ Priority queue implementation using binary heap.
 - **Space Complexity:** O(n)
 - **Use Case:** Task scheduling, shortest path algorithms.
 
+<img width="607" height="376" alt="image" src="https://github.com/user-attachments/assets/b0b04a05-61f3-4f24-b2a9-7042f41541f9" />
+
+
 ### 12. Hash Table  
 Implements separate chaining for collision handling.
 
@@ -121,6 +142,9 @@ Implements separate chaining for collision handling.
 - **Space Complexity:** O(n)
 - **Use Case:** Fast key-based access.
 
+<img width="1200" height="586" alt="image" src="https://github.com/user-attachments/assets/0a87ab0c-a272-4a11-b342-c3dedae9b05b" />
+
+
 ### 13. Graph (Adjacency List)  
 Undirected graph using adjacency list.
 
@@ -129,6 +153,9 @@ Undirected graph using adjacency list.
   - Traversal: O(V + E)
 - **Space Complexity:** O(V + E)
 - **Use Case:** Networks, dependency resolution.
+
+<img width="731" height="341" alt="image" src="https://github.com/user-attachments/assets/dadab2a0-878f-4e4e-a865-5d4fff277ed4" />
+
 
 ---
 
@@ -143,6 +170,9 @@ Two basic traversal methods.
 - **Space Complexity:** O(V)
 - **Use Case:** Search, AI, connectivity check.
 
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/15570807-7d67-4ce7-a104-aba737b6e01b" />
+
+
 ### 15. Trie (Prefix Tree)  
 Specialized tree for prefix operations.
 
@@ -151,12 +181,18 @@ Specialized tree for prefix operations.
 - **Space Complexity:** O(n * L)
 - **Use Case:** Auto-completion, spell-checking.
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7737d631-bc63-4c85-9e2f-6b9c8ec5d9e4" />
+
+
 ### 16. Disjoint Set (Union Find)  
 Tracks and merges disjoint sets.
 
 - **Time Complexity:** O(α(n)) using path compression and union by rank
 - **Space Complexity:** O(n)
 - **Use Case:** Kruskal’s MST, network grouping.
+
+<img width="700" height="513" alt="image" src="https://github.com/user-attachments/assets/40dcf3f9-be2e-4c3c-9fc2-9004aa5cc1d8" />
+
 
 ---
 
