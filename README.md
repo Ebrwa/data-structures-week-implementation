@@ -1,4 +1,4 @@
-# 📘 Data Structures - Full Implementation (Week 1)
+<img width="926" height="515" alt="dynamicarray" src="https://github.com/user-attachments/assets/708dcf01-566b-4b38-b474-bc5376761f94" /># 📘 Data Structures - Full Implementation (Week 1)
 
 This project contains the implementation of fundamental data structures in C++ as part of Week 1 practice.
 
@@ -17,6 +17,9 @@ A resizable array that automatically expands when full.
   - Delete: O(n)
 - **Space Complexity:** O(n)
 - **Use Case:** Used in dynamic containers like `std::vector`.
+
+  <img width="926" height="515" alt="image" src="https://github.com/user-attachments/assets/342b7ae5-e0e5-4392-8b76-312ca246cd1c" />
+
 
 ### 2. Singly Linked List  
 A list of nodes where each node points only to the next node.
